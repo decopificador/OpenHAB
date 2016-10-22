@@ -1,0 +1,8 @@
+sitemap ESPutnik label="Main Menu"{
+	Frame label="MQTT" {
+		Switch item=lamp0
+		Switch item=lamp1
+		Switch item=lamp2
+		Switch item=lamp3
+	}
+}
