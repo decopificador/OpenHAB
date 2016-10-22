@@ -1,6 +1,6 @@
 Group All
 
-Switch lamp0 "Lamp 1" <light> (All) {mqtt=">[broker:test/led0/command:command:on:ON],>[broker:test/led0/command:command:off:OFF],<[broker:test/led0/status:state:default]"}
-Switch lamp1 "Lamp 2" <light> (All) {mqtt=">[broker:test/led1/command:command:on:ON],>[broker:test/led1/command:command:off:OFF],<[broker:test/led1/status:state:default]"}
-Switch lamp2 "Lamp 3" <light> (All) {mqtt=">[broker:test/led2/command:command:on:ON],>[broker:test/led2/command:command:off:OFF],<[broker:test/led2/status:state:default]"}
-Switch lamp3 "Lamp 4" <light> (All) {mqtt=">[broker:test/led3/command:command:on:ON],>[broker:test/led3/command:command:off:OFF],<[broker:test/led3/status:state:default]"}
+Switch lamp0 "Lamp 1" <light> (All) {mqtt=">[broker:ESPutnik/1abbfbe0/out/5/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/5/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/5:state:default]"}
+Switch lamp1 "Lamp 2" <light> (All) {mqtt=">[broker:ESPutnik/1abbfbe0/out/6/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/6/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/6:state:default]"}
+Switch lamp2 "Lamp 3" <light> (All) {mqtt=">[broker:ESPutnik/1abbfbe0/out/7/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/7/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/7:state:default]"}
+Switch lamp3 "Lamp 4" <light> (All) {mqtt=">[broker:ESPutnik/1abbfbe0/out/8/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/8/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/8:state:default]"}
