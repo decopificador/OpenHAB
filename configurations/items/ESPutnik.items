@@ -4,3 +4,6 @@ Switch lamp0 "Lamp 1" <light> (All) {mqtt=">[broker:ESPutnik/1abbfbe0/out/5/set:
 Switch lamp1 "Lamp 2" <light> (All) {mqtt=">[broker:ESPutnik/1abbfbe0/out/6/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/6/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/6:state:default]"}
 Switch lamp2 "Lamp 3" <light> (All) {mqtt=">[broker:ESPutnik/1abbfbe0/out/7/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/7/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/7:state:default]"}
 Switch lamp3 "Lamp 4" <light> (All) {mqtt=">[broker:ESPutnik/1abbfbe0/out/8/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/8/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/8:state:default]"}
+
+Number temp "Temperature [%.2f °C]" <temperature> (All) {mqtt="<[broker:ESPutnik/1abbfbe0/adc/temp:state:default]"}
+Number adc0 "ADC [%d]" <line> (All) {mqtt="<[broker:ESPutnik/1abbfbe0/adc/0:state:default]"}
