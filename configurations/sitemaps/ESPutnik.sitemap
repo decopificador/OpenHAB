@@ -1,9 +1,13 @@
 sitemap ESPutnik label="Main Menu"{
+	Frame {
+		Group item=OUT label="Switches" icon="switch"
+	}
 	Frame label="Digital OUT" {
-		Switch item=lamp0
-		Switch item=lamp1
-		Switch item=lamp2
-		Switch item=lamp3
+		Switch item=OUT mappings=[OFF="All Off",ON="All On"]
+		Switch item=out5
+		Switch item=out6
+		Switch item=out7
+		Switch item=out8
 	}
 	Frame label="Analog IN" {
 		Text item=temp valuecolor=[>35="red",>25="orange",>15="green",<=15="blue"]
