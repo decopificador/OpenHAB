@@ -20,4 +20,10 @@ sitemap ESPutnik label="Main Menu"{
 		Text item=temp valuecolor=[>35="red",>25="orange",>15="green",<=15="blue"]
 		Text item=adc0
 	}
+	Frame label="Analog OUT" {
+		Slider  item=pwm5
+		Slider  item=pwm6
+		Slider  item=pwm7
+		Slider  item=pwm8
+	}
 }

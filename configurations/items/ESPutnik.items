@@ -3,6 +3,7 @@ Group All
 Group:Switch:OR(ON, OFF) OUT "All Switches [(%d)]" (All)
 Group IN (All)
 Group ADC (All)
+Group PWM (All)
 
 /* Digital OUT */
 Switch out5 "Out 5" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/5/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/5/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/5:state:default]"}
@@ -19,3 +20,9 @@ Contact in3 "In 3 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/3:st
 /* ADC */
 Number temp "Temperature [%.2f °C]" <temperature> (ADC) {mqtt="<[broker:ESPutnik/1abbfbe0/adc/temp:state:default]"}
 Number adc0 "ADC [%d]" <line> (ADC) {mqtt="<[broker:ESPutnik/1abbfbe0/adc/0:state:default]"}
+
+/* PWM */
+Dimmer  pwm5  "PWM 5 [%s %%]" <slider> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/5/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/5:state:default]"}
+Dimmer  pwm6  "PWM 6 [%s %%]" <slider> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/6/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/6:state:default]"}
+Dimmer  pwm7  "PWM 7 [%s %%]" <slider> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/7/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/7:state:default]"}
+Dimmer  pwm8  "PWM 8 [%s %%]" <slider> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/8/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/8:state:default]"}
