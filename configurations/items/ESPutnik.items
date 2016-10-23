@@ -1,6 +1,7 @@
 /* Groups */
 Group All
 Group:Switch:OR(ON, OFF) OUT "All Switches [(%d)]" (All)
+Group IN (All)
 Group ADC (All)
 
 /* Digital OUT */
@@ -8,6 +9,12 @@ Switch out5 "Out 5" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/5/set:c
 Switch out6 "Out 6" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/6/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/6/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/6:state:default]"}
 Switch out7 "Out 7" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/7/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/7/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/7:state:default]"}
 Switch out8 "Out 8" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/8/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/8/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/8:state:default]"}
+
+/* Digital IN */
+Contact in0 "In 0 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/0:state:default]"}
+Contact in1 "In 1 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/1:state:default]"}
+Contact in2 "In 2 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/2:state:default]"}
+Contact in3 "In 3 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/3:state:default]"}
 
 /* ADC */
 Number temp "Temperature [%.2f °C]" <temperature> (ADC) {mqtt="<[broker:ESPutnik/1abbfbe0/adc/temp:state:default]"}
