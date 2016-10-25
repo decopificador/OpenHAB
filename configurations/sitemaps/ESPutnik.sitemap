@@ -1,7 +1,9 @@
 sitemap ESPutnik label="Main Menu"{
 	Frame {
+		Group item=GPIO label="Pinmode" icon="socket"
 		Group item=OUT label="Outputs" icon="switch"
 		Group item=IN label="Inputs" icon="contact"
+		Group item=PWM label="PWM" icon="whites"
 	}
 	Frame label="Digital OUT" {
 		Switch item=OUT mappings=[OFF="All Off",ON="All On"]

@@ -4,8 +4,25 @@ Group:Switch:OR(ON, OFF) OUT "All Switches [(%d)]" (All)
 Group IN (All)
 Group ADC (All)
 Group PWM (All)
+Group GPIO (All)
+
+/* Config GPIO */
+Switch gpio0 "GPIO 0 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/0/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/0/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/0:state:default]"}
+Switch gpio1 "GPIO 1 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/1/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/1/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/1:state:default]"}
+Switch gpio2 "GPIO 2 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/2/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/2/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/2:state:default]"}
+Switch gpio3 "GPIO 3 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/3/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/3/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/3:state:default]"}
+Switch gpio4 "GPIO 4 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/4/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/4/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/4:state:default]"}
+Switch gpio5 "GPIO 5 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/5/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/5/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/5:state:default]"}
+Switch gpio6 "GPIO 6 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/6/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/6/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/6:state:default]"}
+Switch gpio7 "GPIO 7 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/7/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/7/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/7:state:default]"}
+Switch gpio8 "GPIO 8 [%s]" <socket> (GPIO) {mqtt=">[broker:ESPutnik/1abbfbe0/gpio/8/set:command:on:OUTPUT],>[broker:ESPutnik/1abbfbe0/gpio/8/set:command:off:INPUT],<[broker:ESPutnik/1abbfbe0/gpio/8:state:default]"}
 
 /* Digital OUT */
+Switch out0 "Out 0" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/0/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/0/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/0:state:default]"}
+Switch out1 "Out 1" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/1/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/1/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/1:state:default]"}
+Switch out2 "Out 2" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/2/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/2/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/2:state:default]"}
+Switch out3 "Out 3" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/3/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/3/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/3:state:default]"}
+Switch out4 "Out 4" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/4/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/4/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/4:state:default]"}
 Switch out5 "Out 5" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/5/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/5/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/5:state:default]"}
 Switch out6 "Out 6" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/6/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/6/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/6:state:default]"}
 Switch out7 "Out 7" <switch> (OUT) {mqtt=">[broker:ESPutnik/1abbfbe0/out/7/set:command:on:ON],>[broker:ESPutnik/1abbfbe0/out/7/set:command:off:OFF],<[broker:ESPutnik/1abbfbe0/out/7:state:default]"}
@@ -16,13 +33,23 @@ Contact in0 "In 0 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/0:st
 Contact in1 "In 1 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/1:state:default]"}
 Contact in2 "In 2 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/2:state:default]"}
 Contact in3 "In 3 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/3:state:default]"}
+Contact in4 "In 4 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/4:state:default]"}
+Contact in5 "In 5 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/5:state:default]"}
+Contact in6 "In 6 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/6:state:default]"}
+Contact in7 "In 7 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/7:state:default]"}
+Contact in8 "In 8 [%s]" <contact> (IN) {mqtt="<[broker:ESPutnik/1abbfbe0/in/8:state:default]"}
 
 /* ADC */
 Number temp "Temperature [%.2f °C]" <temperature> (ADC) {mqtt="<[broker:ESPutnik/1abbfbe0/adc/temp:state:default]"}
 Number adc0 "ADC [%d]" <line> (ADC) {mqtt="<[broker:ESPutnik/1abbfbe0/adc/0:state:default]"}
 
 /* PWM */
-Dimmer  pwm5  "PWM 5 [%s %%]" <slider> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/5/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/5:state:default]"}
-Dimmer  pwm6  "PWM 6 [%s %%]" <slider> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/6/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/6:state:default]"}
-Dimmer  pwm7  "PWM 7 [%s %%]" <slider> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/7/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/7:state:default]"}
-Dimmer  pwm8  "PWM 8 [%s %%]" <slider> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/8/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/8:state:default]"}
+Dimmer  pwm0  "PWM 0 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/0/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/0:state:default]"}
+Dimmer  pwm1  "PWM 1 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/1/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/1:state:default]"}
+Dimmer  pwm2  "PWM 2 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/2/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/2:state:default]"}
+Dimmer  pwm3  "PWM 3 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/3/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/3:state:default]"}
+Dimmer  pwm4  "PWM 4 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/4/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/4:state:default]"}
+Dimmer  pwm5  "PWM 5 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/5/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/5:state:default]"}
+Dimmer  pwm6  "PWM 6 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/6/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/6:state:default]"}
+Dimmer  pwm7  "PWM 7 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/7/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/7:state:default]"}
+Dimmer  pwm8  "PWM 8 [%s %%]" <whites> (PWM) {mqtt=">[broker:ESPutnik/1abbfbe0/pwm/8/set:command:*:default],<[broker:ESPutnik/1abbfbe0/pwm/8:state:default]"}
